@@ -1,5 +1,5 @@
 
-package com.core
+package com.core;
 public class JavaSample1 {
 
     public static void main(String[] args) {
