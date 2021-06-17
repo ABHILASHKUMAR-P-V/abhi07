@@ -1,0 +1,23 @@
+packagecom.core;
+import java.io.*;
+class Logical {
+    public static void main(String[] args)
+    {
+          int a = 10, b = 1, c = 10, d = 30;
+          System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+        System.out.println("Var3 = " + c);
+        System.out.println("Var4 = " + d);
+        if(a&&b&&c&&d!=0){
+          if (a > b || c == d)
+            System.out.println("One or both"+ " the conditions are true");
+             System.out.println("!(a < b) = " + !(a < b));
+        System.out.println("!(a > b) = " + !(a > b));
+                               
+        else
+            System.out.println("Both the" + " conditions are false");
+    }
+   }
+   else
+   System.out.println("a,b,c,d==0 so not went!");
+}
