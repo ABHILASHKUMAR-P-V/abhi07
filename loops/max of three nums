@@ -1,0 +1,17 @@
+packagecom.core;
+public class Numbers 
+{
+	public static void main(String[] args) 
+	{
+		int i = 50;
+		int j = 50;
+    int z = 110;
+		if (i>j&&i>z )
+			System.out.println(" The larger number is i " );
+		elseif (j>i&&j>z)
+			System.out.println(" The larger number is j ");
+		else
+			System.out.println(" The larger number is z ");
+		
+	}
+}
