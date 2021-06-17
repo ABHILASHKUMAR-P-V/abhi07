@@ -1,0 +1,24 @@
+package com.core;
+public class Palindrome 
+{
+	public static void main(String[] args) 
+	{
+		int num = 123212;
+		palindrome Number(num);
+	}
+	private static void palindromeNumber(int num) 
+	{
+		int n = num;
+		int revNumber = 0;
+		while (num != 0) 
+		{
+			revNumber = (revNumber * 10) + num % 10;
+			num = num / 10;
+		}
+		if (revNumber == n)
+			System.out.println("Given Number " + n + " is a palindrome");
+		else
+			System.out.println("Given Number " + n + " is NOT a palindrome");
+	}
+	
+}
