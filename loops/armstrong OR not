@@ -1,0 +1,24 @@
+package com.core;
+public class Armstorng 
+{
+	public static void main(String[] args) 
+	{
+		int n;
+		int temp;
+		int a;
+		int sum = 0;
+		for (int num = 1; num < 999; num++) 
+		{
+			n = num;
+			while (n > 0) 
+			{
+				a = n % 10;
+				n = n / 10;
+				sum = sum + (a * a * a);
+			}
+			if (num == sum)
+			System.out.println(num + "  is an armstrong number");
+			sum = 0;
+		}
+	}
+}
