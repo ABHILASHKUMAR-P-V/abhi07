@@ -1,0 +1,18 @@
+packagecom.core;
+public class Numbers 
+{
+	public static void main(String[] args) 
+	{
+		int i = 50;
+		int j = 50;
+		int max = 0;
+
+		if (i>j )
+			max = i;
+		elseif (j>i )
+			max = j;
+		else
+			max = i;
+		System.out.println(" The larger number is : " + max);
+	}
+}
