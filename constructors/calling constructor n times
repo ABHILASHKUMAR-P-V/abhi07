@@ -1,0 +1,15 @@
+packagecom.core;
+class a
+{
+  a{
+    x=143;
+    }
+
+    public static void main(String args[])
+    {
+     a b = new a(); 
+            for (int i =0; i<5; i++){
+       b.x;
+    }
+    }
+}
