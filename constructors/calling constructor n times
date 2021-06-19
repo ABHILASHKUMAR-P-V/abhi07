@@ -1,15 +1,13 @@
 packagecom.core;
-class a
-{
-  a{
-    x=143;
-    }
-
-    public static void main(String args[])
+class ConstructorDemo{  
+	ConstructorDemo()
+	{
+		System.out.println("ConstructorDemo is created");
+	}  
+	public static void main(String args[]){ 
+    for(int i=0;i<5;i++)
     {
-     a b = new a(); 
-            for (int i =0; i<5; i++){
-       b.x;
+	ConstructorDemo b=new ConstructorDemo();  
     }
-    }
-}
+	}  
+} 
