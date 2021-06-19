@@ -1,0 +1,27 @@
+packagecom.core;
+interface jala
+{
+public
+    void show();
+}
+  
+interface tech
+{
+public
+    int show();
+}
+  
+class Test implements jala,tech
+{
+    void show() 
+    {
+    }
+    int show()
+    {
+        return 1;
+    }
+public
+    static void main(String args[])
+    {
+    }
+}
