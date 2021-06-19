@@ -1,0 +1,9 @@
+packagecom.core;
+public class strLength {
+
+	public static void main(String args[]) {
+		String str = new String("JALA TECHNOLOGIES");
+		System.out.print("Length of the String is :  " + str.length());
+
+	}
+}
