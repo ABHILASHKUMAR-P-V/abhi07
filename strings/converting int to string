@@ -1,0 +1,13 @@
+public class IntegerToString {
+
+	public static void main(String[] args) {
+
+		int i = 67890;
+
+		// using String.valueOf
+		String str = String.valueOf(i);
+		System.out.println(str);
+
+	}
+
+}
