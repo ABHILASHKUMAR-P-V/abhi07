@@ -1,19 +1,47 @@
 packagecom.core;
-class Teacher {
-   String designation = "Teacher";
+  String designation = "Teacher";
    String collegeName = "Beginnersbook";
-   void does(){
-	System.out.println("Teaching");
-   }
+class A extends B {
+  void showtwo()
+  {
+  System.out.println("child showtwo()");
+  }
+	@Override
+	void show()
+	{
+		System.out.println("Child's show()");
+	}
 }
 
-public class PhysicsTeacher extends Teacher{
-   String mainSubject = "Physics";
-   public static void main(String args[]){
-	PhysicsTeacher obj = new PhysicsTeacher();
-	System.out.println(obj.collegeName);
-	System.out.println(obj.designation);
-	System.out.println(obj.mainSubject);
-	obj.does();
-   }
+class B extends C {
+  void showthree()
+  {
+  System.out.println("child showthree()");
+  }
+	@Override
+	void show()
+	{
+		System.out.println("Child's show()");
+	}
+}
+
+class Main {
+	public static void main(String[] args)
+	{
+
+		A obj1 = new A();
+    B obj2 = new B() ;
+    C obj3 = new C() 
+		obj1.show();
+    obj1.showone();
+    obj2.show();
+    obj2.showtwo();
+    obj3.show();
+    obj3.showthree();
+//run time polymorphism
+		A obj4 = new B();
+		obj4.show();
+    B obj5 = new C();
+		obj5.show();
+	}
 }
