@@ -1,0 +1,33 @@
+packagecom.core;
+import java.io.*;
+interface intfA
+{
+	void show();
+}
+
+interface intfB extends intfA
+{
+	void display();
+}
+class sample implements intfB
+{
+	@Override
+	public void show()
+	{
+		System.out.println("jala");
+	}
+
+	@Override
+	public void display()
+	{
+		System.out.println("tech");
+	}
+
+	public static void main (String[] args)
+	{
+		sample ob1 = new sample();
+
+		ob1.show();
+		ob1.display();
+	}
+}
