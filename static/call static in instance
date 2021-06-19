@@ -1,0 +1,10 @@
+packagecom.core;
+class Super {
+    public static void staticMethod() { return; }
+}
+class Instance extends Super {
+}
+
+Instance instance = new Instance();
+instance.staticMethod();  // doesn't work
+((Super) instance).staticMethod();
