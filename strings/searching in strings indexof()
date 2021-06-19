@@ -1,0 +1,7 @@
+packagecom.core;
+public class IndexOfExample{  
+public static void main(String args[]){  
+String s1="this is index of example";  
+int index=s1.indexOf('string index') 
+System.out.println(index);
+}}  
