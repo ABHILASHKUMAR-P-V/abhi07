@@ -1,0 +1,28 @@
+packagecom.core;
+import java.io.*;
+
+class con
+{
+	int num;
+  con()
+	{
+		System.out.println("Constructor called");
+	}
+  con(String name, int id)
+    {
+        this.name = name;
+        this.id = id;
+    }
+}
+
+class GFG
+{
+	public static void main (String[] args)
+	{
+		
+		con obj = new con();
+    System.out.println(obj.name);
+    con obj1 = new con(jala,2);
+		System.out.println("NAME:"+obj1.name"ID:"+obj1.id);
+	}
+}
