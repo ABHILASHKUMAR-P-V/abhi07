@@ -1,0 +1,35 @@
+packagecom.core;
+public class Person
+{
+  
+   private String name;
+   private String email;
+   private String phoneNumber;
+
+    public static int personCounter = 0;
+   public static void printPersonCounter() {
+        System.out.println("Person counter: " + personCounter);
+   }
+
+    public Person(String initName, String initEmail, String initPhone)
+   {
+      name = initName;
+      email = initEmail;
+      phoneNumber = initPhone;
+      personCounter++;
+   }
+
+     public String toString()
+   {
+     return  name + ": " + email + " " + phoneNumber;
+   }
+
+   /
+   public static void main(String[] args)
+   {
+       Person p1 = new Person("JALA", "jalatech@gmail.com", "2654131680");
+       Person p2 = new Person("ABHILASH", "abhi@gmail.com", "9641311155");
+
+       Person.printPersonCounter();
+   }
+}
