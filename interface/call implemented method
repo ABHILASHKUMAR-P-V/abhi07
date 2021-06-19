@@ -1,0 +1,17 @@
+packagecom.core;
+public interface InterfaceDemo{
+      public void displayName(String name);
+    }
+public class InterfaceDemoImpl implements InterfaceDemo{
+    public void displayName(String name) {
+         System.out.println(name);
+    }  
+  
+}
+public class CallInterfaceMethod {
+     public static void main(String args[]){
+         InterfaceDemo demo = new InterfaceDemoImpl();
+         demo.displayName("JALA TECHNOLOGIES");
+      
+      }
+}
