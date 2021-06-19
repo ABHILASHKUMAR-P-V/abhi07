@@ -1,0 +1,57 @@
+packagecom.core;
+class A{
+	void show()
+	{
+		System.out.println("Parent's show()");
+	}
+  void showone()
+  {
+  	System.out.println("Parent's showone()");
+  }
+}
+
+
+class A extends B {
+  void showtwo()
+  {
+  System.out.println("child showtwo()");
+  }
+	@Override
+	void show()
+	{
+		System.out.println("Child's show()");
+	}
+}
+
+class B extends C {
+  void showthree()
+  {
+  System.out.println("child showthree()");
+  }
+	@Override
+	void show()
+	{
+		System.out.println("Child's show()");
+	}
+}
+
+class Main {
+	public static void main(String[] args)
+	{
+
+		A obj1 = new A();
+    B obj2 = new B() ;
+    C obj3 = new C() 
+		obj1.show();
+    obj1.showone();
+    obj2.show();
+    obj2.showtwo();
+    obj3.show();
+    obj3.showthree();
+//run time polymorphism
+		A obj4 = new B();
+		obj4.show();
+    B obj5 = new C();
+		obj5.show();
+	}
+}
