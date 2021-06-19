@@ -1,0 +1,28 @@
+packagecom.core;
+class Test
+{
+  public Test()
+  {
+  System.out.println("Hello as public");
+  }
+  private Test() 
+  {
+    System.out.println("Hello private");
+  }      
+  protected Test(int x) 
+  {
+    System.out.println(x);
+  }      
+}
+
+public class Demo extends Test 
+{       
+  public Demo() 
+  {
+    super(100);
+  }      
+  public static void main(String args[])
+  {
+     Demo d1 = new Demo();
+  }
+}
