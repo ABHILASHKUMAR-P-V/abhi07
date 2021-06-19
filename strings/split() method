@@ -1,0 +1,12 @@
+public class Strings {
+	public static void main(String[] args){
+		String str="JALA TECHNOLOGY";
+		String[] strArray=str.split("\\s", 6); 
+		for(String s:strArray){
+			System.out.println("Sub String is : "+s);
+		}
+		
+		System.out.println("Lenght of the array of strings :"+strArray.length);
+	}
+	
+}
