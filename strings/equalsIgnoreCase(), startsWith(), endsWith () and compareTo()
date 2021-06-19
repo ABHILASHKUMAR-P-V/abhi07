@@ -1,0 +1,11 @@
+packagecom.core;
+public class JavaExample{
+   public static void main(String args[]){
+	String str1= new String("Apple");
+	String str2= new String("MANGO");
+	System.out.println("str1 equals to str2:"+str1.equalsIgnoreCase(str2));
+  System.out.println("Does string start with Bright: " + str1.startsWith("Bright"));
+		System.out.println("Does string end with Bright: " + str2.endsWith(".com"));
+    System.out.println(str.compareTo(str2))
+    }
+  }
