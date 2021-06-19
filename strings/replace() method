@@ -1,0 +1,13 @@
+packagecom.core;
+public class replace {
+public static void main(String args[]) {
+	String Str = new String("jala tech");
+		
+System.out.print("After replacing all o with T : " );
+	System.out.println(Str.replace('a', 'i'));
+		acters
+	System.out.print("After replacing all e with D : " );
+	System.out.println(Str.replace('e', 'E'));
+		
+}
+}
