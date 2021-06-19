@@ -1,0 +1,12 @@
+packagecom.core;
+   
+class trimprog{
+    public static void main(String args[])
+    {
+        
+       String s = " jala technologies "; 
+    System.out.println(s.trim());  
+          
+       
+    }
+}
