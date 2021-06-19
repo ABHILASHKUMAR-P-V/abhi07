@@ -1,0 +1,13 @@
+packagecom.core;
+import java.lang.*;
+
+public class StringDemo {
+public static void main(String[] args) {
+String str = "JALA TECHNOLOGIES INTERNSHIP";
+String substr = "";
+substr = str.substring(8, 17);
+System.out.println("substring = " + substr);
+substr = str.substring(0, 8);
+System.out.println("substring = " + substr);
+}
+}
