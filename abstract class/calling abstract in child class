@@ -1,0 +1,19 @@
+packagecom.core;
+public abstract class Test {
+    void ter()
+    {
+        System.out.println("super");
+    }
+}
+ public class concret extends Test{
+    void ter()
+    {
+        System.out.println("child");
+    }
+ }
+public class run {
+    public static void main(String[] args) {
+        Test t=new concret();
+        t.ter();
+    }
+}
