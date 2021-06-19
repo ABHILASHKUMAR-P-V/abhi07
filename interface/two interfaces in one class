@@ -1,0 +1,21 @@
+packagecom. core;
+public interface InterfaceA {
+  public void print();
+}
+
+
+public interface InterfaceB {
+  public int print();
+}
+
+public class ClassAB implements InterfaceA, InterfaceB {
+  public void print()
+  {
+    System.out.println("Inside InterfaceA");
+  }
+  public int print()
+  {
+    System.out.println("Inside InterfaceB");
+    return 5;
+  }
+}
