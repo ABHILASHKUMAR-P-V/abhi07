@@ -1,3 +1,4 @@
+packagecom.core;
 public class Main {
   int x = 5;
 
