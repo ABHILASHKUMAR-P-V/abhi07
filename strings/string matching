@@ -1,0 +1,11 @@
+packagecom.core;
+public class Match1 {
+	public static void main(String args[]) {
+	String Str = new String("Welcome jala technologies");
+	System.out.print("Does String contains regex (.*)jala(.*) ? : " );
+	System.out.println(Str.matches("(.*)jala(.*)"));
+	System.out.print("Does String contains regex jala ? : " );
+	System.out.println(Str.matches("jala"));
+		
+}
+}
