@@ -1,0 +1,23 @@
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+ 
+class Main
+{
+    public static void main(String[] args)
+    {
+        File file = new File("doc.txt");
+ 
+        try (FileReader fr = new FileReader(file))
+        {
+            char[] chars = new char[(int) file.length()];
+            fr.read(chars);
+ 
+            String fileContent = new String(chars);
+            System.out.println(fileContent);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
