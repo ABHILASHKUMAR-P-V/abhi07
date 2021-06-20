@@ -1,0 +1,37 @@
+
+import java.io.*;
+
+class Addition {
+public int add(int a, int b)
+	{
+
+		int sum = a + b;
+		return sum;
+	}
+
+	public double add(int a, int b)
+	{
+		double sum = a + b + 0.0;
+		return sum;
+	}
+}
+
+class jala {
+	public static void main(String[] args)
+	{
+		try {
+			Addition ob = new Addition();
+
+			int sum1 = ob.add(1, 2);
+			System.out.println(
+				"sum of the two integer value :" + sum1);
+
+			int sum2 = ob.add(1, 2);
+			System.out.println(
+				"sum of the three integer value :" + sum2);
+		}
+		catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
