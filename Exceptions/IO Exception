@@ -1,0 +1,22 @@
+import java.util.*;  
+import java.util.regex.Pattern;  
+public class ScannerIOExceptionExample2 {    
+    public static void main(String args[]){       
+             
+            Scanner scan = new Scanner("Names:Raju1;Pawan;Suresh");  
+     
+            scan.useDelimiter(";");  
+            
+            Pattern pattern = Pattern.compile("[A-Za-z]*");  
+            while(scan.hasNext()){  
+                if(scan.hasNext(pattern)){  
+                    System.out.println(scan.nextLine());  
+                  
+                      System.out.println("Exception Output: " + scan.ioException());  
+                }  
+                else  
+                    scan.next();  
+                }  
+                scan.close();  
+        }    
+}  
