@@ -1,0 +1,18 @@
+
+package com.core;
+
+public class DataTest {
+
+  public static void main(String[] args) {
+    try {
+      Class.forName("com.core");
+
+      ClassLoader.getSystemClassLoader().loadClass("com.core");
+
+      ClassLoader.getPlatformClassLoader().loadClass("com.core");
+    } catch (ClassNotFoundException e) {
+      e.printStackTrace();
+    }
+  }
+
+}
