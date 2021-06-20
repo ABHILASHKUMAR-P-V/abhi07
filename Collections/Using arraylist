@@ -1,0 +1,56 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+public class TestStringArray {
+   int element,int position;
+    public static void main(String[] args) {
+        List<String>[] arr = new StringArrayList[10];
+        for(int i = 0; i < arr.length; i++){
+            
+            arr[i] = new StringArrayList(); 
+            for(int j = 0; j < arr.length; j++){
+                arr[i].add("list item #(" + j + "|" + i + ")");
+            }
+        }
+    //addding string
+        arr.add("car obj");
+        System.out.println(sb.toString());
+        //iterate object
+        ArrayList<String> namesList = new ArrayList<String>(Arrays.asList( "alex", "brian", "charles") );
+         
+namesList.forEach(name -> System.out.println(name));
+//adding to specific position
+ arr.add(position - 1, element);
+  System.out.println("\nArray with " + element + " inserted at position "+ position + ":\n"
+ //after string removal
+ arr.remove(2);
+       System.out.println("ArrayList After remove:");
+       for(String var2: arr){
+             System.out.println(var2);
+             //checking index at list
+             Scanner n = new Scanner(System.in);  
+    System.out.println("Enter username");
+      String userName = n.nextLine()
+             for(int k=0;k<=10;k++)
+             {
+             if ( arr[k] == n ) {
+ System.out.println("ArrayList After remove:"); 
+}
+else {
+  System.out.println("ArrayList After remove:");
+    }
+}
+//knowing array size
+System.out.println("The size of the ArrayList is: " + arr.size());
+//removing all elements in arraylist
+Iterator itr = arr.iterator();
+        while (itr.hasNext())
+        {
+            int x = (Integer)itr.next();
+            if (x < 10)
+                itr.remove();
+        }
+  
+        System.out.println("Modified ArrayList : "
+                                           + arr);
+}
